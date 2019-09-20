@@ -7,20 +7,20 @@ class App extends Component {
     super();
 
     this.state = {
-      monsters: [],
+      avatars: [],
     };
   }
 
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(resp => resp.json())
-      .then(users => this.setState({ monsters: users }));
+      .then(users => this.setState({ avatars: users }));
   }
 
   render() {
     return (
       <div className="App">
-        <CardList monsters={this.state.monsters} />
+        <CardList avatars={this.state.avatars} />
       </div>
     );
   }
