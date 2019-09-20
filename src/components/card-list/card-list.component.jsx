@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default const CardList = props => {
-  <div>{props.children}</div>
+export default function CardList(props) {
+  return <div>{props.children}</div>;
 }
