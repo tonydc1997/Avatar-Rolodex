@@ -19,6 +19,8 @@ class App extends Component {
   }
 
   render() {
+    const { avatars, searchField } = this.state;
+
     return (
       <div className="App">
         <input
