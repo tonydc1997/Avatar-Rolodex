@@ -21,7 +21,7 @@ class App extends Component {
   render() {
     const { avatars, searchField } = this.state;
     const filteredAvatars = avatars.filter(avatar =>
-      avatar.lowerCase().includes(searchField.lowerCase())
+      avatar.name.toLowerCase().includes(searchField.toLowerCase())
     );
 
     return (
@@ -31,7 +31,7 @@ class App extends Component {
           placeholder="search avatars"
           onChange={e => this.setState({ searchField: e.target.value })}
         />
-        <CardList avatars={this.state.avatars} />
+        <CardList avatars={filteredAvatars} />
       </div>
     );
   }
