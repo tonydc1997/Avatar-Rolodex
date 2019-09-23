@@ -20,6 +20,9 @@ class App extends Component {
 
   render() {
     const { avatars, searchField } = this.state;
+    const filteredAvatars = avatars.filter(avatar =>
+      avatar.lowerCase().includes(searchField.lowerCase())
+    );
 
     return (
       <div className="App">
