@@ -3,13 +3,13 @@
   background: #252941;
 }
 
-h1 {
-  font-family: 'Raleway';
-  font-size: 72px;
+h1,
+h2,
+p {
+  font-family: 'Ubuntu', 'Courier New', Courier, monospace;
   color: #fbfcfc;
 }
 
-h2,
-p {
-  color: #fbfcfc;
+h1 {
+  font-size: 70px;
 }
